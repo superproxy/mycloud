@@ -1,0 +1,11 @@
+[template]
+prefix = "/haproxy"
+src = "haproxy.cfg.tmpl"
+dest = "/etc/haproxy/haproxy.cfg"
+owner = "haproxy"
+mode = "0644"
+keys = [
+  "/servers",
+]
+check_cmd = "haproxy -c -f /etc/haproxy/haproxy.cfg"
+reload_cmd = "haproxy -db -f /etc/haproxy/haproxy.cfg -st `cat /run/haproxy.pid`"

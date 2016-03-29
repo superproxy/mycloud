@@ -1,0 +1,11 @@
+[template]
+prefix = "/nginx"
+src = "nginx.cfg.tmpl"
+dest = "/etc/nginx/nginx.conf"
+owner = "nginx"
+mode = "0644"
+keys = [
+  "/servers",
+]
+check_cmd = "nginx -t"
+reload_cmd = "nginx -s reload`"
