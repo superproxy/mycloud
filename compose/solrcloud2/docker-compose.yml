@@ -1,0 +1,24 @@
+solrcloud1:
+  image: mysolr2
+  ports:    
+    - "6783:8983"
+solrcloud2:
+  image: mysolr2
+  ports:    
+    - "7783:8983"
+solrcloud3:
+  image: mysolr2
+  ports:    
+    - "8783:8983"
+solrcloud4:
+  image: mysolr2
+  ports:    
+    - "9783:8983"
+solrcloud5:
+  image: mysolr2
+  ports:    
+    - "10783:8983"
+solrcloud6:
+  image: mysolr2
+  ports:    
+    - "11783:8983"

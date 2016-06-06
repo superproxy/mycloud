@@ -1,0 +1,7 @@
+cluster.name: cluster1
+node.name: node1
+path:
+  data: /data1/data
+  logs: /data1/log
+  plugins: /elasticsearch/plugins
+  work: /data1/work
