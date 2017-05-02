@@ -1,24 +1,42 @@
+myzookeeper :
+  image: myzookeeper
+  ports:    
+    - "2181:2181"
+
 solrcloud1:
   image: mysolr2
   ports:    
     - "6783:8983"
+  links:
+    - myzookeeper
+
 solrcloud2:
   image: mysolr2
   ports:    
     - "7783:8983"
+  links:
+    - myzookeeper
 solrcloud3:
   image: mysolr2
   ports:    
     - "8783:8983"
+  links:
+    - myzookeeper
 solrcloud4:
   image: mysolr2
   ports:    
     - "9783:8983"
+  links:
+    - myzookeeper
 solrcloud5:
   image: mysolr2
   ports:    
     - "10783:8983"
+  links:
+    - myzookeeper
 solrcloud6:
   image: mysolr2
   ports:    
     - "11783:8983"
+  links:
+    - myzookeeper
