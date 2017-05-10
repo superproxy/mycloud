@@ -1,0 +1,51 @@
+version: '2'
+services:
+  myzookeeper:
+    image: myzookeeper
+    container_name: myzookeeper
+    #ports:    
+    #  - "2181:2181"
+
+  mynimbus:
+    build: ./storm
+          #image: mystorm
+    container_name: mynimbus
+    command: bin/storm nimbus   -c storm.local.hostname=mynimbus
+    environment:
+      - STORM_ZOOKEEPER_SERVERS=zk1
+    links:
+     - myzookeeper
+    depends_on:
+     - myzookeeper
+
+  supervisor:
+    build: ./storm
+    #image: mystorm 
+    command: bin/storm supervisor  -c nimbus.host=mynimbus
+    links:
+     - myzookeeper
+     - mynimbus
+    depends_on:
+     - mynimbus
+
+  ui:
+    build: ./storm
+    command: bin/storm ui  -c nimbus.host=mynimbus
+    #command: bin/storm ui   #unkonw hosts
+    ports:    
+      - "8080:8080"
+    links:
+     - myzookeeper
+     - mynimbus
+    depends_on:
+     - mynimbus
+
+  client:
+    build: ./storm
+    #command: client2/test.sh 
+    command: bin/storm ui  -c nimbus.host=mynimbus
+    links:
+     - myzookeeper
+     - mynimbus
+    depends_on:
+     - mynimbus

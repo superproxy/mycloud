@@ -18,7 +18,8 @@ VOLUME  /opt/solr
 
 ENV SOLR_VERSION 6.0.1
 
-CMD ["bash","-c", "bin/solr start -f -p 8983  -z 10.24.48.71:2181"]
+#CMD ["bash","-c", "bin/solr start -f -p 8983  -z 10.24.48.71:2181/solr_cluster2"]
+CMD ["bash","-c", "bin/solr start -f -p 8983  -z myzookeeper:2181/solr_cluster2"]
 
 
 

@@ -1,0 +1,46 @@
+version: '2'
+services:
+  myzookeeper:
+    image: myzookeeper
+    #container_name: zk1
+    #ports:    
+    #  - "2181:2181"
+    #myzookeeper2 :
+    #image: myzookeeper
+    #container_name: zk2
+    #ports:    
+    #  - "2181:2181"
+
+  mynimbus:
+    build: ./storm
+          #image: mystorm
+          #container_name: mynimbus
+    command: bin/storm nimbus 
+    environment:
+      - STORM_ZOOKEEPER_SERVERS=zk1
+    #ports:    
+    #  - 6627:6627
+    links:
+     - myzookeeper
+    depends_on:
+     - myzookeeper
+
+  supervisor:
+    build: ./storm
+    #image: mystorm 
+    command: bin/storm supervisor 
+    links:
+     - myzookeeper
+     - mynimbus
+    depends_on:
+     - mynimbus
+
+  ui:
+    build: ./storm
+    #image: mystorm 
+    command: bin/storm ui 
+    links:
+     - myzookeeper
+     - mynimbus
+    depends_on:
+     - mynimbus

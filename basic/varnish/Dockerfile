@@ -1,11 +1,10 @@
+
 FROM mybase
 
 #RUN  yum install -y update 
 #RUN yum install -y deltarpm
 #RUN  yum install -y  jemalloc
-RUN  yum install -y  varnish
-
-
+RUN  yum install -y  varnish 
 
 ENV http_proxy=""
 ENV https_proxy=""
@@ -23,7 +22,7 @@ ADD  ./varnish.sh  /varnish.sh
 WORKDIR /
 #CMD ["varnish.sh"]
 
-ADD  ./default.vcl  /etc/varnish/default.vcl
+ADD  ./varnish/default.vcl  /etc/varnish/default.vcl
 #VOLUME ./varnish /etc/varnish/
 # -F Run in foreground
 CMD ["varnishd", "-F", "-f", "/etc/varnish/default.vcl", "-s", "malloc,100m", "-T", "127.0.0.1:2000", "-a","0.0.0.0:80"]

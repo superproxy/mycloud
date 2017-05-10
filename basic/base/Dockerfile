@@ -5,9 +5,17 @@ FROM centos:latest
 
 #ENV  http_proxy="http://10.24.19.97:8888"
 #ENV  https_proxy="http://10.24.19.97:8888"
-RUN yum install -y wget
-RUN alias md=mkdir
+
+RUN alias md=mkdir 
+
+#tools
 RUN yum install -y epel-release
+RUN yum install -y wget
+RUN yum install -y  zip unzip
+RUN yum install -y  net-tools
+RUN yum install -y  nc
+RUN yum install -y  telnet 
+RUN yum -y install tar 
 
 RUN yum install -y sudo 
 
@@ -19,6 +27,7 @@ RUN  ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 RUN  ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key  
 RUN  ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key  
 RUN  mkdir /var/run/sshd  
+ 
 
    
 ADD bash_profile /root/.bash_profile
