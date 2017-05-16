@@ -1,0 +1,28 @@
+version: '2'
+services:
+  myelasticsearch:
+    image: myelasticsearch
+    container_name: myelasticsearch
+  mykibana:
+    image: mykibana
+    #build: ./kibana
+    #image: mystorm
+    #container_name: mynimbus
+    links:
+      - myelasticsearch
+    depends_on:
+      - myelasticsearch
+  myredis:
+    image: myredis
+    #build: ./kibana
+    #image: mystorm
+    container_name: myredis
+  mylogstash:
+    #image: mylogstash
+    build: ./logstash
+    links:
+      - myelasticsearch
+      - myredis
+    depends_on:
+      - myelasticsearch
+      - myredis

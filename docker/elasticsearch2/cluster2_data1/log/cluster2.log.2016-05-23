@@ -1,0 +1,11 @@
+[2016-05-23 15:37:19,923][INFO ][node                     ] [node1] version[1.5.0], pid[1], build[5448160/2015-03-23T14:30:58Z]
+[2016-05-23 15:37:19,925][INFO ][node                     ] [node1] initializing ...
+[2016-05-23 15:37:19,974][INFO ][plugins                  ] [node1] loaded [], sites [head]
+[2016-05-23 15:37:32,608][INFO ][node                     ] [node1] initialized
+[2016-05-23 15:37:32,611][INFO ][node                     ] [node1] starting ...
+[2016-05-23 15:37:32,965][INFO ][transport                ] [node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/172.17.0.19:9300]}
+[2016-05-23 15:37:33,035][INFO ][discovery                ] [node1] cluster2/TpwOwz0BS9yZzJUiUCJ8Ww
+[2016-05-23 15:37:37,158][INFO ][cluster.service          ] [node1] new_master [node1][TpwOwz0BS9yZzJUiUCJ8Ww][9910ebf08662][inet[/172.17.0.19:9300]], reason: zen-disco-join (elected_as_master)
+[2016-05-23 15:37:37,454][INFO ][http                     ] [node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/172.17.0.19:9200]}
+[2016-05-23 15:37:37,456][INFO ][node                     ] [node1] started
+[2016-05-23 15:37:37,571][INFO ][gateway                  ] [node1] recovered [0] indices into cluster_state

@@ -1,0 +1,12 @@
+[2017-05-12 09:25:55,403][INFO ][node                     ] [node1] version[1.5.0], pid[1], build[5448160/2015-03-23T14:30:58Z]
+[2017-05-12 09:25:55,404][INFO ][node                     ] [node1] initializing ...
+[2017-05-12 09:25:55,410][INFO ][plugins                  ] [node1] loaded [], sites []
+[2017-05-12 09:25:59,658][INFO ][node                     ] [node1] initialized
+[2017-05-12 09:25:59,658][INFO ][node                     ] [node1] starting ...
+[2017-05-12 09:25:59,978][INFO ][transport                ] [node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/172.17.0.6:9300]}
+[2017-05-12 09:26:00,029][INFO ][discovery                ] [node1] cluster2/glGo2aJMRqKRflC_NRXdwg
+[2017-05-12 09:26:03,873][INFO ][cluster.service          ] [node1] new_master [node1][glGo2aJMRqKRflC_NRXdwg][e52cf45173aa][inet[/172.17.0.6:9300]], reason: zen-disco-join (elected_as_master)
+[2017-05-12 09:26:04,052][INFO ][http                     ] [node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/172.17.0.6:9200]}
+[2017-05-12 09:26:04,053][INFO ][node                     ] [node1] started
+[2017-05-12 09:26:04,079][INFO ][gateway                  ] [node1] recovered [0] indices into cluster_state
+[2017-05-12 09:26:40,578][INFO ][cluster.service          ] [node1] added {[node2][E-NW6bBMTjOKVxJCMsdm6g][051d4f03a00e][inet[/172.17.0.7:9300]],}, reason: zen-disco-receive(join from node[[node2][E-NW6bBMTjOKVxJCMsdm6g][051d4f03a00e][inet[/172.17.0.7:9300]]])

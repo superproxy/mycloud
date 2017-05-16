@@ -1,0 +1,1 @@
+bin/hbase shell
