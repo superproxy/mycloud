@@ -1,0 +1,34 @@
+version: '2'
+services:
+  myhbase:
+    build: ./hbase
+  myui:
+    build: ./ui
+    #command: bin/storm nimbus   -c storm.local.hostname=mynimbus
+    #environment:
+    #  - STORM_ZOOKEEPER_SERVERS=zk1
+    links:
+     - myhbase
+    depends_on:
+     -  myhbase
+
+  mycollector:
+    build: ./collector
+    links:
+     - myhbase
+    depends_on:
+     -  myhbase
+    #image: mystorm 
+    #command: bin/storm supervisor  -c nimbus.host=mynimbus
+    #links:
+    # - myzookeeper
+    # - mynimbus
+    # myagent:
+          #  build: ./agent
+    #command: client2/test.sh 
+    #command: bin/storm ui  -c nimbus.host=mynimbus
+    #links:
+    # - myzookeeper
+    # - mynimbus
+    #depends_on:
+    # - mynimbus

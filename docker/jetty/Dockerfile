@@ -28,4 +28,5 @@ ENV JETTY_HOME /opt/jetty
 # run is foregroud  start is backgroud
 CMD ["bin/jetty.sh", "run"]
 
+#If the webapp is called root.war or the directory is called root/ then Jetty deploys it at the / context.
 
