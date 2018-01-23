@@ -1,0 +1,31 @@
+FROM centos:centos7
+RUN yum install -y java-1.8.0-openjdk-devel.x86_64
+ENV JAVA_HOME /etc/alternatives/java_sdk
+ENV JRE_HOME $JAVA_HOME/jre
+ENV CLASSPATH .:$JAVA_HOME/lib:$JRE_HOME/lib
+ENV PATH $PATH:$JAVA_HOME/bin
+
+
+WORKDIR /opt
+RUN yum install -y tomcat
+
+#RUN yum clean all && yum swap -y fakesystemd systemd
+#/etc/logrotate.d/tomcat
+#/etc/sysconfig/tomcat
+#/etc/tomcat
+#/usr/libexec/tomcat
+#/usr/sbin/tomcat
+#/usr/share/java/tomcat
+#/usr/share/maven-fragments/tomcat
+#/usr/share/tomcat
+#/var/cache/tomcat
+#/var/lib/tomcat
+#/var/log/tomcat
+#CMD ["/usr/sbin/init && /usr/sbin/tomcat", "start"]
+#CMD /usr/sbin/init && /usr/sbin/tomcat start
+#CMD ["/usr/sbin/tomcat", "start"]
+#CMD ["/bin/bash", "-c", "/usr/sbin/init && sleep 10 && /usr/sbin/tomcat start"]
+#CMD "/usr/sbin/init&& sleep 10 && /usr/sbin/tomcat start"
+#CMD ["/bin/bash", "-c", "sbin/start-dfs.sh &&  sbin/start-yarn.sh"]
+#CMD /usr/sbin/init
+RUN systemctl start  tomcat

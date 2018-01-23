@@ -20,7 +20,7 @@ RUN unzip  apache-tomcat-8.5.14.zip
 
 WORKDIR /opt/apache-tomcat-8.5.14
 RUN   chmod +x bin/*.sh 
-#EXPOSE 8080
+EXPOSE 8080
 #CMD bin/startup.sh
 CMD ["bin/catalina.sh", "run"]
 

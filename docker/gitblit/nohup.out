@@ -1,0 +1,131 @@
+Picked up _JAVA_OPTIONS:  -Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses
+Running from: /opt/jetty/webapps/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Jan 23, 2018 5:10:09 AM Main deleteWinstoneTempContents
+WARNING: Failed to delete the temporary Winstone file /tmp/winstone/jenkins.war
+Jan 23, 2018 5:10:10 AM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @1788ms to org.eclipse.jetty.util.log.JavaUtilLog
+Jan 23, 2018 5:10:10 AM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Jan 23, 2018 5:10:10 AM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+Jan 23, 2018 5:10:10 AM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.z-SNAPSHOT
+Jan 23, 2018 5:10:11 AM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Jan 23, 2018 5:10:11 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Jan 23, 2018 5:10:11 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Jan 23, 2018 5:10:11 AM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 600000ms
+Jenkins home directory: /opt/jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Jan 23, 2018 5:10:13 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started w.@536f2a7e{/,file:///opt/jenkins/war/,AVAILABLE}{/opt/jenkins/war}
+Jan 23, 2018 5:10:13 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@4722ef0c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+Jan 23, 2018 5:10:13 AM org.eclipse.jetty.server.Server doStart
+INFO: Started @5013ms
+Jan 23, 2018 5:10:13 AM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v4.0 running: controlPort=disabled
+Jan 23, 2018 5:10:14 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Jan 23, 2018 5:10:16 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Jan 23, 2018 5:10:36 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Jan 23, 2018 5:10:36 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Jan 23, 2018 5:10:40 AM hudson.ExtensionFinder$GuiceFinder$FaultTolerantScope$1 error
+INFO: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+Jan 23, 2018 5:10:41 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Jan 23, 2018 5:10:42 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Jan 23, 2018 5:10:42 AM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Jan 23, 2018 5:10:42 AM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 36 ms
+Jan 23, 2018 5:10:43 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@1912d9bb: display name [Root WebApplicationContext]; startup date [Tue Jan 23 05:10:43 UTC 2018]; root of context hierarchy
+Jan 23, 2018 5:10:43 AM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@1912d9bb]: org.springframework.beans.factory.support.DefaultListableBeanFactory@3dada797
+Jan 23, 2018 5:10:43 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3dada797: defining beans [authenticationManager]; root of factory hierarchy
+Jan 23, 2018 5:10:44 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@353a61f7: display name [Root WebApplicationContext]; startup date [Tue Jan 23 05:10:44 UTC 2018]; root of context hierarchy
+Jan 23, 2018 5:10:44 AM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@353a61f7]: org.springframework.beans.factory.support.DefaultListableBeanFactory@305965ac
+Jan 23, 2018 5:10:44 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@305965ac: defining beans [filter,legacy]; root of factory hierarchy
+Jan 23, 2018 5:10:44 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Jan 23, 2018 5:10:44 AM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Picked up _JAVA_OPTIONS:  -Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses
+Running from: /opt/jetty/webapps/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Jan 23, 2018 6:18:52 AM Main deleteWinstoneTempContents
+WARNING: Failed to delete the temporary Winstone file /tmp/winstone/jenkins.war
+Jan 23, 2018 6:18:52 AM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @1399ms to org.eclipse.jetty.util.log.JavaUtilLog
+Jan 23, 2018 6:18:52 AM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Jan 23, 2018 6:18:52 AM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+Jan 23, 2018 6:18:53 AM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.z-SNAPSHOT
+Jan 23, 2018 6:18:53 AM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Jan 23, 2018 6:18:53 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Jan 23, 2018 6:18:53 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Jan 23, 2018 6:18:53 AM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 660000ms
+Jenkins home directory: /opt/jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Jan 23, 2018 6:18:55 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started w.@536f2a7e{/,file:///opt/jenkins/war/,AVAILABLE}{/opt/jenkins/war}
+Jan 23, 2018 6:18:55 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@4722ef0c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+Jan 23, 2018 6:18:55 AM org.eclipse.jetty.server.Server doStart
+INFO: Started @4204ms
+Jan 23, 2018 6:18:55 AM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v4.0 running: controlPort=disabled
+Jan 23, 2018 6:18:56 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Jan 23, 2018 6:18:57 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Jan 23, 2018 6:19:20 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Jan 23, 2018 6:19:20 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Jan 23, 2018 6:19:24 AM hudson.ExtensionFinder$GuiceFinder$FaultTolerantScope$1 error
+INFO: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+Jan 23, 2018 6:19:24 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Jan 23, 2018 6:19:25 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Jan 23, 2018 6:19:26 AM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Jan 23, 2018 6:19:26 AM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 13 ms
+Jan 23, 2018 6:19:27 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@379ffa58: display name [Root WebApplicationContext]; startup date [Tue Jan 23 06:19:27 UTC 2018]; root of context hierarchy
+Jan 23, 2018 6:19:27 AM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@379ffa58]: org.springframework.beans.factory.support.DefaultListableBeanFactory@775126e
+Jan 23, 2018 6:19:27 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@775126e: defining beans [authenticationManager]; root of factory hierarchy
+Jan 23, 2018 6:19:27 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@3731ae87: display name [Root WebApplicationContext]; startup date [Tue Jan 23 06:19:27 UTC 2018]; root of context hierarchy
+Jan 23, 2018 6:19:27 AM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@3731ae87]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1cb722d6
+Jan 23, 2018 6:19:27 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cb722d6: defining beans [filter,legacy]; root of factory hierarchy
+Jan 23, 2018 6:19:27 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Jan 23, 2018 6:19:28 AM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Jan 23, 2018 6:21:34 AM org.eclipse.jetty.server.session.Session beginInvalidate
+INFO: Session node0ogd2qehj5tclis7l5yc3r2o60 already being invalidated
+/usr/bin/docker-current: Error response from daemon: driver failed programming external connectivity on endpoint boring_sinoussi (535499be34f41aa8866b76a5582c5669dc43d21148b1621fa64f1001b3717fc8): Bind for 0.0.0.0:8080 failed: port is already allocated.

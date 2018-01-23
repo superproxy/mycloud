@@ -1,0 +1,16 @@
+FROM  myjetty
+
+
+WORKDIR /opt/jetty/webapps
+RUN wget -O gitblit.war  http://dl.bintray.com/gitblit/releases/gitblit-1.8.0.war
+
+
+
+VOLUME  /opt/gitblit /opt/gitblit
+ENV baseFolder  /opt/gitblit
+WORKDIR /opt/jetty
+EXPOSE 80
+EXPOSE 8080
+EXPOSE 9481
+EXPOSE 29481
+CMD ["bin/jetty.sh","run"]
