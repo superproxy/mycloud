@@ -1,0 +1,21 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+export PATH
+
+alias md=mkdir
+alias vi=vim
+http_proxy="$ip"
+https_proxy="$ip"
+ip="http://10.24.19.97:8888" 
+
+export http_proxy
+export https_proxy
+
