@@ -1,0 +1,276 @@
+[H[J
+#############################################################
+# One click Install Shadowsocks-Python server               #
+# Intro: https://teddysun.com/342.html                      #
+# Author: Teddysun <i@teddysun.com>                         #
+# Github: https://github.com/shadowsocks/shadowsocks        #
+#############################################################
+
+Please enter password for shadowsocks-python
+(Default password: teddysun.com):
+---------------------------
+password = yxz
+---------------------------
+
+Please enter a port for shadowsocks-python [1-65535]
+(Default port: 15197):
+---------------------------
+port = 8388
+---------------------------
+
+Please select stream cipher for shadowsocks-python:
+[0;32m1[0m) aes-256-gcm
+[0;32m2[0m) aes-192-gcm
+[0;32m3[0m) aes-128-gcm
+[0;32m4[0m) aes-256-ctr
+[0;32m5[0m) aes-192-ctr
+[0;32m6[0m) aes-128-ctr
+[0;32m7[0m) aes-256-cfb
+[0;32m8[0m) aes-192-cfb
+[0;32m9[0m) aes-128-cfb
+[0;32m10[0m) camellia-128-cfb
+[0;32m11[0m) camellia-192-cfb
+[0;32m12[0m) camellia-256-cfb
+[0;32m13[0m) chacha20-ietf-poly1305
+[0;32m14[0m) chacha20-ietf
+[0;32m15[0m) chacha20
+[0;32m16[0m) rc4-md5
+Which cipher you'd select(Default: aes-256-gcm):
+---------------------------
+cipher = aes-256-cfb
+---------------------------
+
+
+Press any key to start...or Press Ctrl+C to cancel
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+Package python-2.7.5-69.el7_5.x86_64 already installed and latest version
+Package python-devel-2.7.5-69.el7_5.x86_64 already installed and latest version
+Package python-setuptools-0.9.8-7.el7.noarch already installed and latest version
+Package 1:openssl-1.0.2k-12.el7.x86_64 already installed and latest version
+Package 1:openssl-devel-1.0.2k-12.el7.x86_64 already installed and latest version
+Package curl-7.29.0-46.el7.x86_64 already installed and latest version
+Package wget-1.14-15.el7_4.1.x86_64 already installed and latest version
+Package unzip-6.0-19.el7.x86_64 already installed and latest version
+Package gcc-4.8.5-28.el7_5.1.x86_64 already installed and latest version
+Package automake-1.13.4-3.el7.noarch already installed and latest version
+Package autoconf-2.69-11.el7.noarch already installed and latest version
+Package 1:make-3.82-23.el7.x86_64 already installed and latest version
+Package libtool-2.4.2-22.el7_3.x86_64 already installed and latest version
+Nothing to do
+--2018-11-02 23:02:51--  https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz
+Resolving github.com (github.com)... 192.30.253.113, 192.30.253.112
+Connecting to github.com (github.com)|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/7710647/83a2fc2c-e01e-11e7-93d1-34e5a92f4011?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20181102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181102T150252Z&X-Amz-Expires=300&X-Amz-Signature=5fbcaf5900bf7543f689af2522da8ce306d4631118e67da8b274e6a939689fa7&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dlibsodium-1.0.16.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2018-11-02 23:02:52--  https://github-production-release-asset-2e65be.s3.amazonaws.com/7710647/83a2fc2c-e01e-11e7-93d1-34e5a92f4011?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20181102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181102T150252Z&X-Amz-Expires=300&X-Amz-Signature=5fbcaf5900bf7543f689af2522da8ce306d4631118e67da8b274e6a939689fa7&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dlibsodium-1.0.16.tar.gz&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.230.155
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.230.155|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1910835 (1.8M) [application/octet-stream]
+Saving to: ‘libsodium-1.0.16.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  2%  113K 16s
+    50K .......... .......... .......... .......... ..........  5%  227K 12s
+   100K .......... .......... .......... .......... ..........  8% 24.2M 8s
+   150K .......... .......... .......... .......... .......... 10% 31.3M 6s
+   200K .......... .......... .......... .......... .......... 13%  229K 6s
+   250K .......... .......... .......... .......... .......... 16% 19.6M 5s
+   300K .......... .......... .......... .......... .......... 18% 24.8M 4s
+   350K .......... .......... .......... .......... .......... 21% 24.8M 3s
+   400K .......... .......... .......... .......... .......... 24%  235K 3s
+   450K .......... .......... .......... .......... .......... 26% 25.3M 3s
+   500K .......... .......... .......... .......... .......... 29% 21.6M 3s
+   550K .......... .......... .......... .......... .......... 32% 34.9M 2s
+   600K .......... .......... .......... .......... .......... 34% 35.8M 2s
+   650K .......... .......... .......... .......... .......... 37% 33.9M 2s
+   700K .......... .......... .......... .......... .......... 40% 36.0M 2s
+   750K .......... .......... .......... .......... .......... 42%  238K 2s
+   800K .......... .......... .......... .......... .......... 45% 23.9M 2s
+   850K .......... .......... .......... .......... .......... 48% 32.5M 1s
+   900K .......... .......... .......... .......... .......... 50% 42.5M 1s
+   950K .......... .......... .......... .......... .......... 53% 43.6M 1s
+  1000K .......... .......... .......... .......... .......... 56% 43.0M 1s
+  1050K .......... .......... .......... .......... .......... 58% 44.1M 1s
+  1100K .......... .......... .......... .......... .......... 61% 30.2M 1s
+  1150K .......... .......... .......... .......... .......... 64% 51.2M 1s
+  1200K .......... .......... .......... .......... .......... 66% 40.1M 1s
+  1250K .......... .......... .......... .......... .......... 69% 48.2M 1s
+  1300K .......... .......... .......... .......... .......... 72% 46.5M 1s
+  1350K .......... .......... .......... .......... .......... 75% 33.5M 0s
+  1400K .......... .......... .......... .......... .......... 77% 30.1M 0s
+  1450K .......... .......... .......... .......... .......... 80%  245K 0s
+  1500K .......... .......... .......... .......... .......... 83% 46.7M 0s
+  1550K .......... .......... .......... .......... .......... 85% 33.3M 0s
+  1600K .......... .......... .......... .......... .......... 88% 33.8M 0s
+  1650K .......... .......... .......... .......... .......... 91% 33.1M 0s
+  1700K .......... .......... .......... .......... .......... 93% 37.5M 0s
+  1750K .......... .......... .......... .......... .......... 96% 36.8M 0s
+  1800K .......... .......... .......... .......... .......... 99% 31.2M 0s
+  1850K .......... ......                                     100% 35.4M=1.6s
+
+2018-11-02 23:02:54 (1.17 MB/s) - ‘libsodium-1.0.16.tar.gz’ saved [1910835/1910835]
+
+--2018-11-02 23:02:54--  https://github.com/shadowsocks/shadowsocks/archive/master.zip
+Resolving github.com (github.com)... 192.30.253.112, 192.30.253.113
+Connecting to github.com (github.com)|192.30.253.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/shadowsocks/shadowsocks/zip/master [following]
+--2018-11-02 23:02:55--  https://codeload.github.com/shadowsocks/shadowsocks/zip/master
+Resolving codeload.github.com (codeload.github.com)... 192.30.253.121, 192.30.253.120
+Connecting to codeload.github.com (codeload.github.com)|192.30.253.121|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 114904 (112K) [application/zip]
+Saving to: ‘shadowsocks-master.zip’
+
+     0K .......... .......... .......... .......... .......... 44%  108K 1s
+    50K .......... .......... .......... .......... .......... 89%  217K 0s
+   100K .......... ..                                         100% 21.2M=0.7s
+
+2018-11-02 23:02:57 (162 KB/s) - ‘shadowsocks-master.zip’ saved [114904/114904]
+
+--2018-11-02 23:02:57--  https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.192.133, 151.101.0.133, 151.101.64.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.192.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2037 (2.0K) [text/plain]
+Saving to: ‘/etc/init.d/shadowsocks’
+
+     0K .                                                     100% 14.0M=0s
+
+2018-11-02 23:02:57 (14.0 MB/s) - ‘/etc/init.d/shadowsocks’ saved [2037/2037]
+
+[[0;32mInfo[0m] firewall set start...
+[[0;33mWarning[0m] firewalld looks like not running or not installed, please enable port 8388 manually if necessary.
+[[0;32mInfo[0m] firewall set completed...
+running install
+running bdist_egg
+running egg_info
+creating shadowsocks.egg-info
+writing shadowsocks.egg-info/PKG-INFO
+writing top-level names to shadowsocks.egg-info/top_level.txt
+writing dependency_links to shadowsocks.egg-info/dependency_links.txt
+writing entry points to shadowsocks.egg-info/entry_points.txt
+writing manifest file 'shadowsocks.egg-info/SOURCES.txt'
+reading manifest file 'shadowsocks.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'shadowsocks.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/shadowsocks
+copying shadowsocks/common.py -> build/lib/shadowsocks
+copying shadowsocks/shell.py -> build/lib/shadowsocks
+copying shadowsocks/lru_cache.py -> build/lib/shadowsocks
+copying shadowsocks/tunnel.py -> build/lib/shadowsocks
+copying shadowsocks/tcprelay.py -> build/lib/shadowsocks
+copying shadowsocks/eventloop.py -> build/lib/shadowsocks
+copying shadowsocks/udprelay.py -> build/lib/shadowsocks
+copying shadowsocks/local.py -> build/lib/shadowsocks
+copying shadowsocks/manager.py -> build/lib/shadowsocks
+copying shadowsocks/__init__.py -> build/lib/shadowsocks
+copying shadowsocks/server.py -> build/lib/shadowsocks
+copying shadowsocks/cryptor.py -> build/lib/shadowsocks
+copying shadowsocks/daemon.py -> build/lib/shadowsocks
+copying shadowsocks/asyncdns.py -> build/lib/shadowsocks
+creating build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/openssl.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/rc4_md5.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/util.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/aead.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/__init__.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/mbedtls.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/sodium.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/hkdf.py -> build/lib/shadowsocks/crypto
+copying shadowsocks/crypto/table.py -> build/lib/shadowsocks/crypto
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/common.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/shell.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/lru_cache.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/tunnel.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/tcprelay.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/eventloop.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/udprelay.py -> build/bdist.linux-x86_64/egg/shadowsocks
+creating build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/openssl.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/rc4_md5.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/util.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/aead.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/__init__.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/mbedtls.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/sodium.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/hkdf.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/crypto/table.py -> build/bdist.linux-x86_64/egg/shadowsocks/crypto
+copying build/lib/shadowsocks/local.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/manager.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/__init__.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/server.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/cryptor.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/daemon.py -> build/bdist.linux-x86_64/egg/shadowsocks
+copying build/lib/shadowsocks/asyncdns.py -> build/bdist.linux-x86_64/egg/shadowsocks
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/common.py to common.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/shell.py to shell.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/lru_cache.py to lru_cache.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/tunnel.py to tunnel.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/tcprelay.py to tcprelay.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/eventloop.py to eventloop.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/udprelay.py to udprelay.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/openssl.py to openssl.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/rc4_md5.py to rc4_md5.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/util.py to util.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/aead.py to aead.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/mbedtls.py to mbedtls.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/sodium.py to sodium.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/hkdf.py to hkdf.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/crypto/table.py to table.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/local.py to local.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/manager.py to manager.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/server.py to server.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/cryptor.py to cryptor.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/daemon.py to daemon.pyc
+byte-compiling build/bdist.linux-x86_64/egg/shadowsocks/asyncdns.py to asyncdns.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying shadowsocks.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying shadowsocks.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying shadowsocks.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying shadowsocks.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying shadowsocks.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+shadowsocks.server: module references __file__
+shadowsocks.tunnel: module references __file__
+shadowsocks.shell: module references __file__
+shadowsocks.local: module references __file__
+creating dist
+creating 'dist/shadowsocks-3.0.0-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing shadowsocks-3.0.0-py2.7.egg
+removing '/usr/lib/python2.7/site-packages/shadowsocks-3.0.0-py2.7.egg' (and everything under it)
+creating /usr/lib/python2.7/site-packages/shadowsocks-3.0.0-py2.7.egg
+Extracting shadowsocks-3.0.0-py2.7.egg to /usr/lib/python2.7/site-packages
+shadowsocks 3.0.0 is already the active version in easy-install.pth
+Installing sslocal script to /usr/bin
+Installing ssserver script to /usr/bin
+
+Installed /usr/lib/python2.7/site-packages/shadowsocks-3.0.0-py2.7.egg
+Processing dependencies for shadowsocks==3.0.0
+Finished processing dependencies for shadowsocks==3.0.0
+writing list of installed files to '/usr/local/shadowsocks_install.log'
+INFO: loading config from /etc/shadowsocks.json
+2018-11-02 23:02:58 INFO     loading libcrypto from libcrypto.so.10
+Starting Shadowsocks success
+[H[J
+Congratulations, Shadowsocks-python server install completed!
+Your Server IP        : [41;37m 119.28.24.14 [0m
+Your Server Port      : [41;37m 8388 [0m
+Your Password         : [41;37m yxz [0m
+Your Encryption Method: [41;37m aes-256-cfb [0m
+
+Welcome to visit:https://teddysun.com/342.html
+Enjoy it!
+
