@@ -15,3 +15,12 @@ how to add new app
 1. test on your host
 2. write scripts
 3. write it to docker
+
+
+
+
+
+# windows
+1. install dockerdesktop
+2. start_ui2.bat 
+3. build.bat tomcat
